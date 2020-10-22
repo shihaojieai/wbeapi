@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            /* div,
+            p {
+                width: 300px;
+                height: 30px;
+                line-height: 30px;
+                color: #fff;
+                background-color: pink;
+            } */
+            input {
+            color: #999; 
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="wq">
+        12
+    </div>
+    <div class="aa">22</div>
+    <p>23</p>
+    <ul>
+        <li>青春在*1</li>
+        <li>青春在*2</li>
+        <li>青春在*3</li>
+        <li>青春在*4</li>
+        <li>青春在*5</li>   
+    </ul> -->
+
+
+    <!-- <button>显示当前系统时间</button>
+    <div>某个时间</div>
+    <p>1123</p> -->
+    <input type="text" value="手机">
+
+
+    <!-- <button>按钮</button>   -->
+    <!-- <input type="text" value="输入内容"> -->
+    <script>
+        var oIpt = document.querySelector('input');
+        oIpt.onfocus = function() {
+            if (this.value === '手机') {
+                this.value = '';
+                this.style.color = '#333';
+            }
+        }
+        oIpt.onblur = function() {
+            if (this.value === '') {
+                this.value = '手机';
+                this.style.color = '#999';
+            }
+            
+        }
+
+        
+        // var oBnt = document.querySelector('button');
+        // var oIpt = document.querySelector('input');
+        // oBnt.onclick = function() {
+        //     oIpt.value = '王者归来';
+        //     this.disabled = true;
+        //     oIpt.disabled = 're'
+        // }
+
+
+
+        // var oBnt = document.querySelector('button');
+        // var oDiv = document.querySelector('div');
+        // var oP = document.querySelector('p');
+
+        // oBnt.onclick = function() {
+        //     oDiv.innerHTML = '10-10-10';
+        //     oP.innerText = getDate();
+        // }
+
+
+        // function getDate() {
+        //     var date = new Date();
+        //     // 我们写一个 2019年 5月 1日 星期三
+        //     var year = date.getFullYear();
+        //     var month = date.getMonth() + 1;
+        //     var dates = date.getDate();
+        //     var arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+        //     var day = date.getDay();
+        //     return '今天是：' + year + '年' + month + '月' + dates + '日 ' + arr[day];
+        // }
+        // var id = document.getElementById('wq');
+        // console.log(id);
+        // var wq = document.getElementsByTagName('li');
+        // console.log(wq);
+        // var ww = document.getElementsByClassName('aa');
+        // console.log(ww);
+        // var id = document.querySelector('#wq');
+        // console.log(id);
+        // var ss = document.querySelector('p');
+        // console.log(ss);
+        
+
+        
+        
+        
+        
+
+    </script>
+</body>
+</html>

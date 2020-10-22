@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <button>变绿</button>
+    <div class="one two green1"></div>
+    <script>
+        // 获取元素
+        var aBtn = document.querySelectorAll('button');
+        var oDiv = document.querySelector('div');
+        // 给第一个按钮绑定了点击事件
+        aBtn[0].onclick = function () {
+            // oDiv.className = 'green';
+            // 想保留之前 class，可以像下面这样抄下来
+            // oDiv.className = 'one two green';
+
+            // console.log(oDiv.className); // 'one two'
+            // oDiv.className = oDiv.className + ' green';
+            // oDiv.className += ' green'; // 每次都会加，第一次没问题，后面会有额外的
+
+            // 先检测之前有没有 green class，有就不进行操作了，没有就加上
+            /* if(oDiv.className.indexOf('green') === -1) {
+                oDiv.className += ' green';
+            } */
+            /* if(!oDiv.className.includes('green')) {
+                oDiv.className += ' green';
+            } */
+            // 先转为数组再判断
+            if(!oDiv.className.split(' ').includes('green')) {
+                oDiv.className += ' green';
+            }
+
+            // 增加 class
+            // oDiv.classList.add('green');
+            // 删除 class
+            // oDiv.classList.remove('one');
+            // 切换 class，如果 oDiv 身上有 green class，就删除，没有 green class 就添加
+            oDiv.classList.toggle('green');
+        };
+    </script>
+</body>
+
+</html>

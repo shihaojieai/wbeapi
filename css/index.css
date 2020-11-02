@@ -1,0 +1,388 @@
+/* 板心 */
+.w {
+    width: 1440px;
+    margin: 0 auto;
+}
+/* 字体图标 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+      url('../fonts/icomoon.woff?tomleg') format('woff'),
+      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+/* 轮播图 */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 3px;
+    border-radius: 8px;
+    border: 2px solid rgba(216, 35, 35, 0.5);
+    background-color: rgba(216, 35, 35, 0.5);
+    cursor: pointer;
+  }
+
+
+/* 1.头部 header start */
+header {
+    height: 42px;
+    background-color:#FDFDFD;
+    border-top: 1px solid #ccc;
+}
+header ul {
+    width: 980px;
+    margin-left: 300px;
+}
+header li {
+    height: 42px;
+    float: left;
+    line-height: 42px;
+}
+.hd1 {
+    width: 205px;
+    padding-left: 83px;
+    
+}
+.hd1 a {
+    display: block;
+    width: 130px;
+    height: 32px;
+    margin: 5px 0;
+    background: url(../images/精灵图.png) no-repeat -108px -48px ;
+    /* margin-right:20px; */
+    /* font-size: 20px; */
+}
+.hd2 {
+    width: 230px;
+}
+.hd2 img {
+    margin-bottom: 5px;
+    width: 100%;
+}
+.hd3 {
+    float: right;
+    width: 309px;
+}
+.hd3 span a {
+    /* display: inline-block; */
+    /* background-color: aqua; */
+    border-right: 1px solid #ccc;
+    padding: 0 6px 0 4px;
+}
+.hd3 .sy {
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #fff;
+}
+.hd3 .sy i {
+    color: blue;
+}
+
+
+/* 2.主体 wrap start */
+.wrap {
+    /* margin-top: 20px; */
+    height: 1200px;
+    background: url(../images/hd.png) no-repeat -200px 0;
+    
+    /* background-color: pink; */
+}
+.dw {
+    background-image: url(../images/bg_nav.png) ;
+    /* background: url(../images/bg_nav.png) no-repeat; */
+
+
+}
+
+.head {
+    /* position: fixed; */
+    /* top: 42px; */
+    /* left: 0; */
+    margin-top: 5px;
+    width: 966px;
+    height: 300px;
+    /* background-color: red; */
+}
+
+.head1 ul li {
+    /* box-sizing: border-box; */
+    float: left;
+    width: 137px;
+}
+.head1 ul li a {
+    display: block;
+    width: 137px;
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.head span {
+    /* background: url(../images/bg_nav.png) no-repeat; */
+
+    display: inline-block;
+    width: 133px;
+    text-align: center;
+}
+.head span li {
+    margin-top: 2px;
+}
+.head span a {
+    /* display: none; */
+    color: #F0F0F0;
+    font-size: 14px;
+    /* text-shadow: 1px 1px #F0F0F0; */
+}
+/* 2.2 A隐藏链接 */
+.yc {
+    /* display: none; */
+    position: fixed;
+    top: 140px;
+    left: 470px;
+    height: 242px;
+    width: 966px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+.yc a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -999099px;
+    overflow: hidden;
+}
+
+
+/* 2.3 bnner 中间部分 */
+.bnner {
+    margin-top: 100px;
+}
+.bnner div {
+    float: left;
+}
+.bnner1 {
+    width: 245px;
+    height: 449px;
+}
+.bnner1 img {
+    display: block;
+    width: 100%;
+}
+.bnner2 {
+    position: relative;
+    width: 343px;
+    height: 431px;
+    margin-left: 30px;
+}
+.bnner2 div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: .5;
+}
+.bnner3 {
+    position: relative;
+    width: 343px;
+    height: 431px;
+    overflow: hidden;
+}
+/* .bnner3 ul {
+    width: 600%;
+}
+.bnner3 ol {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 14px;
+} */
+/* .bnner3 ol li {
+    float: left;
+    width: 20px;
+    height: 3px;
+    border-radius: 8px;
+    border: 2px solid rgba(216, 35, 35, 0.5);
+    margin-left: 4px;
+    cursor: pointer;
+}; */
+/* .gh {
+    background-color: red;
+} */
+
+.bnner4 {
+    width: 479px;
+    height: 431px;
+    background-color: #fff;
+}
+/* .bnner4_hd {
+    height: 64px;
+    background-color: pink;
+    width: 100%;
+}
+.bnner4_hd li {
+    float: left;
+    height: 64px;
+    line-height: 64px;
+    width: 20%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+.bnner4_hd li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+} */
+
+/* tab */
+.tab {
+    padding: 0 20px;
+    width: 479px;
+    /* margin: 100px auto; */
+}
+
+.tab_list {
+    height: 64px;
+    width: 100%;
+    /* background-color: #c81623; */
+}
+
+.tab_list li {
+    /* float: left;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 20px;
+    text-align: center;
+    cursor: pointer; */
+    float: left;
+    height: 64px;
+    line-height: 64px;
+    width: 20%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+.tab_list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.current {
+    border-bottom: 2px solid red;
+}
+
+.item_info {
+    padding: 20px 0 0 20px;
+}
+
+.item {
+    display: none;
+    width: 439px;
+}
+
+.news-hot {
+    margin-top: 30px;
+    width: 100%; 
+    height: 60px;
+    background-color: #F0F0F0;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.news-hot a {
+    font-size: 16px;
+    font-weight: 700;
+}
+.news-list li {
+    float: left;
+    /* height: 30px; */
+    width: 100%;
+    margin: 7px 0;
+    font-size: 14px;
+}
+.news-list li em {
+    color: red;
+    padding: 5px;
+    background-color: #F0F0F0;
+}
+.news-list li span {
+    float: right;
+}
+.news-more {
+    margin-top: 20px;
+    width: 100%;
+    height: 37px;
+    /* background-color: palegreen; */
+    font-size: 16px;
+    line-height: 38px;
+    text-align: center;
+    border: 2px solid #F0F0F0;
+}
+.news-more span {
+    font-family: 'icomoon';
+    color: red;
+}
+.bg{
+    border-bottom: 2px solid red;
+}
+.zbl {
+    position: fixed;
+    left: 0;
+    top: 550px;
+    width: 50px;
+    height: 150px;
+    
+    
+}
+.zbl a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/qw..png) no-repeat -1044px 0;
+}
+.zbl a em {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    text-align: -99999px;
+    background: url(../images/qw..png) no-repeat -1167px -115px;;
+}
